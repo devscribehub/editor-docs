@@ -1,0 +1,115 @@
+---
+title: "Component Reference"
+description: "Complete showcase of all available Devscribe components"
+---
+## Callouts
+
+<Callout type="info">
+Info callout component
+</Callout>
+
+<Callout type="tip">
+Tip callout component
+</Callout>
+
+<Callout type="warning">
+Warning callout component
+</Callout>
+
+<Callout type="success">
+Success callout component
+</Callout>
+
+<Callout type="danger">
+Danger callout component
+</Callout>
+
+## Code Components
+
+```javascript
+console.log('Basic code block');
+```
+
+<CodeSnippet language="javascript" title="config.js">
+{`const config = { key: 'value' };`}
+</CodeSnippet>
+
+```typescript
+interface Example {
+  name: string;
+  value: number;
+}
+```
+
+<CodeGroup>
+  <CodeSnippet language="javascript" title="JavaScript">
+  {`console.log('JavaScript example');`}
+  </CodeSnippet>
+  <CodeSnippet language="python" title="Python">
+  {`print('Python example')`}
+  </CodeSnippet>
+  <CodeSnippet language="curl" title="cURL">
+  {`curl -X GET 'https://api.example.com/endpoint'`}
+  </CodeSnippet>
+</CodeGroup>
+
+## Steps
+
+<Steps>
+  <Step title="First step">
+Basic step content
+  </Step>
+  <Step title="Second step">
+Another step with content
+  </Step>
+</Steps>
+
+## Tabs
+
+## Accordions
+
+<AccordionGroup>
+  <Accordion title="First accordion">
+  Content inside first accordion
+  </Accordion>
+  <Accordion title="Second accordion">
+  Content inside second accordion
+  </Accordion>
+</AccordionGroup>
+
+## Cards
+
+<Card title="Single card" icon="rocket" href="/example">
+Card content
+</Card>
+
+<CardGroup cols={2} gap="md">
+  <Card title="First card" icon="key" href="/example">
+First card content
+  </Card>
+  <Card title="Second card" icon="clock" href="/example">
+Second card content
+  </Card>
+</CardGroup>
+
+## API Components
+
+<ParameterField name="parameter_name" type="string">
+Parameter description
+</ParameterField>
+
+<ParameterField name="optional_param" type="integer" default="10">
+Optional parameter with default
+</ParameterField>
+
+<ResponseField name="response_field" type="string">
+Response field description
+</ResponseField>
+
+<ResponseField name="nested_field" type="object">
+Object with nested fields
+
+<Expand title="Nested properties">
+<ResponseField name="child_field" type="string">
+Nested field description
+</ResponseField>
