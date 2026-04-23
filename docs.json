@@ -16,7 +16,7 @@
               "quickstart/docs-json",
               {
                 "dropdown": "Dropdown Example",
-                "pages": [
+                "pages": [ 
                   "quickstart/docs",
                   "quickstart/components"
                 ],
