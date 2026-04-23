@@ -17,8 +17,8 @@
               {
                 "dropdown": "Dropdown Example",
                 "pages": [
-                  "quickstart/dropdown-doc-a",
-                  "quickstart/dropdown-doc-b"
+                  "quickstart/docs",
+                  "quickstart/components"
                 ],
                 "defaultOpen": true
               }
