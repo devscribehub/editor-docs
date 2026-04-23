@@ -3,7 +3,6 @@ title: docs.json Guide
 description: How to configure navigation, tabs, groups, and pages with docs.json
 icon: navigation
 ---
-
 ## What is it?
 
 `docs.json` is the single source of truth for your documentation navigation. It defines tabs, groups, and the ordered list of pages that appear in the sidebar, and it powers previous/next navigation.
@@ -75,6 +74,12 @@ icon: navigation
 
 ## Adding a new page
 
+<AccordionGroup>
+  <Accordion title="Accordion 1">
+  Accordion content...
+  </Accordion>
+</AccordionGroup>
+
 1. Create a new `.mdx` file in your docs (e.g., `quickstart/my-page.mdx`).
 2. Add frontmatter at the top:
 
@@ -85,7 +90,7 @@ description: Short description shown below the title
 ---
 ```
 
-3. Add the page path (without `.mdx`) to the appropriate `pages` array in `docs.json`:
+1. Add the page path (without `.mdx`) to the appropriate `pages` array in `docs.json`:
 
 ```json
 {
@@ -184,6 +189,12 @@ Add external links under `navigation.global.anchors`:
 - If you add a page but don't see it, ensure both the file exists and `docs.json` is updated.
 
 ## Full example
+
+<Card title="Card" />
+
+<Callout type="tip">
+hi<br>
+</Callout>
 
 ```json
 {
